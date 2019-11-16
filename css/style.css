@@ -1,0 +1,144 @@
+* {
+  font-family: 'Open Sans', sans-serif; }
+
+.main_header {
+  max-width: 2000px;
+  margin: 0 auto;
+  height: 100vh; }
+  .main_header .main_menu {
+    height: 80px;
+    background: #242424; }
+    .main_header .main_menu .menu {
+      max-width: 1200px;
+      padding: 0 20px;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box; }
+      .main_header .main_menu .menu .top_logo {
+        font-size: 30px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        color: white; }
+        .main_header .main_menu .menu .top_logo:hover {
+          color: cyan;
+          transition-duration: 0.5s; }
+      .main_header .main_menu .menu a {
+        text-decoration: none;
+        text-transform: uppercase; }
+      .main_header .main_menu .menu .main_nav {
+        width: 600px;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        font-weight: 300; }
+        .main_header .main_menu .menu .main_nav a {
+          color: #e9e9e9; }
+          .main_header .main_menu .menu .main_nav a:hover {
+            color: cyan;
+            transition-duration: 0.3s; }
+  .main_header .bg_header {
+    width: 100%;
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    background: url(../img/bg_header.webp) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .main_header .bg_header .box_brown {
+      width: 500px;
+      height: 120px;
+      border: 3px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      text-transform: uppercase;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      color: white; }
+    .main_header .bg_header .mouse {
+      width: 32px;
+      height: 60px;
+      border: 1px solid white;
+      border-radius: 13px;
+      padding-top: 5px;
+      box-sizing: border-box; }
+      .main_header .bg_header .mouse .wheel {
+        width: 5px;
+        height: 10px;
+        background: white;
+        border-radius: 3px;
+        margin: 0 auto;
+        animation-name: wheel;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite; }
+
+.about_me {
+  padding: 70px 0; }
+  .about_me .txt_about_me {
+    text-align: center;
+    border: 2px solid black;
+    width: 350px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 300; }
+  .about_me .box_about_me {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-template-areas: "img_photo_about_me personal_information personal_profile" "img_photo_about_me social social"; }
+    .about_me .box_about_me .img_photo_about_me {
+      grid-area: img_photo_about_me;
+      background: url(/img/entrepreneur.webp) center no-repeat;
+      background-size: cover; }
+    .about_me .box_about_me .personal_information {
+      grid-area: personal_information; }
+      .about_me .box_about_me .personal_information .header_presonal_information {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #242424; }
+      .about_me .box_about_me .personal_information .data_personal {
+        border-bottom: 1px dashed black;
+        font-size: 14px;
+        padding: 15px 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: #242424; }
+    .about_me .box_about_me .personal_profile {
+      grid-area: personal_profile; }
+      .about_me .box_about_me .personal_profile .header_presonal_profile {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #242424; }
+    .about_me .box_about_me .social {
+      grid-area: social;
+      padding-top: 30px; }
+      .about_me .box_about_me .social .fab {
+        font-size: 46px;
+        color: #1d1d1d;
+        cursor: pointer; }
+        .about_me .box_about_me .social .fab:hover {
+          color: black; }
+        .about_me .box_about_me .social .fab:not(:last-child) {
+          margin-right: 10px; }
+
+@keyframes wheel {
+  100% {
+    transform: translateY(12px); } }

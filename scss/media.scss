@@ -1,0 +1,81 @@
+@media screen and (max-width:1200px){
+
+}
+
+
+@media screen and (max-width:992px){
+   //ХЕДЕР=================================================
+   .main_header{
+      .main_menu{
+         .menu{
+            .main_nav{
+               width: 550px;
+            }
+         }
+      }
+      .bg_header{
+         .box_brown{
+            width: 400px;
+            height: 100px;
+            font-size: 40px;
+         }
+      }
+   }
+   .about_me{
+      .box_about_me{
+         grid-template-columns: 60%;
+         justify-content: center;
+         grid-template-areas:
+         "img_photo_about_me"
+         "img_photo_about_me"
+         "personal_information"
+         "personal_profile"
+         "social"
+         ;
+      }
+   }
+}
+
+
+@media screen and (max-width:768px){
+   //ХЕДЕР=================================================
+   .main_header{
+      .main_menu{
+         .menu{
+            .main_nav{
+               display: none;
+            }
+         }
+      }
+      .bg_header{
+         .box_brown{
+            width: 350px;
+            height: 80px;
+            font-size: 34px;
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width:480px){
+   //ХЕДЕР=================================================
+   .main_header{
+      .main_menu{
+         .menu{
+            justify-content: center;
+         }
+      }
+      .bg_header{
+         .box_brown{
+            width: 290px;
+            height: 70px;
+            font-size: 30px;
+            margin-bottom: 50px;
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width:320px){}
